@@ -9,3 +9,4 @@ if Rails.env.development?
     AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') 
 else
     AdminUser.create!(email: 'leon8941@gmail.com', password: '0128979626', password_confirmation: '0128979626') 
+end
