@@ -2,15 +2,18 @@ import React, {Component} from 'react'
 
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography';
-import { CssBaseline, Avatar } from '@material-ui/core';
-
+import Typography from '@material-ui/core/Typography'
+import { CssBaseline } from '@material-ui/core'
 import { withStyles, MuiThemeProvider } from '@material-ui/core/styles'
+import { Avatar } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
 
-import avatarImg from '../../assets/avatar.jpg'
+import Typist from 'react-typist'
+import avatarImg from '../../assets/avatar.png'
+
 
 import Aux from '../../hoc/aux'
-import { styles, themes } from './LayoutCSS';
+import { styles, themes } from './LayoutCSS'
 
 class Layout extends Component {
     render() {
@@ -24,21 +27,27 @@ class Layout extends Component {
                         <div className={classes.header}>
                             <Toolbar variant="dense" className={classes.toolbarMain}>
                                 <MuiThemeProvider theme={themes}>
-                                    <Avatar className={classes.avatar} src={avatarImg}/>
                                     <Button className={classes.button} size="large">About Me</Button>
                                     <Button className={classes.button} size="large">My Works</Button>
-                                    <Button className={classes.button} size="large">My Blogs</Button>
+                                    <Button className={classes.button} size="large">My Journey</Button>
                                 </MuiThemeProvider>
                             </Toolbar>
                         </div>
                         <div className={classes.title}> 
                             <MuiThemeProvider theme={themes}>
-                                <Typography component="h1" variant="h1" gutterBottom>
-                                    I'M LEON.
-                                </Typography>  
-                                <Typography variant="h6" gutterBottom>
-                                    A SOFTWARE DEVELOPER
-                                </Typography>
+                                <Typist cursor={{show: false}} avgTypingDelay={150}>
+                                    <Typography variant="h1" gutterBottom>
+                                        I'M LEON.
+                                    </Typography>  
+                                </Typist>
+                                <Grid container justify="center" alignItems="center">
+                                    <Avatar alt="me" src={avatarImg} className={classes.avatar}/>
+                                </Grid>
+                                <Typist cursor={{show: false}} avgTypingDelay={80} startDelay={50}>
+                                    <Typography variant="h6" gutterBottom>
+                                        A FULL STACK WEB / SOFTWARE DEVELOPER
+                                    </Typography>
+                                </Typist>
                             </MuiThemeProvider>
                         </div>
                         <div className={classes.body}>

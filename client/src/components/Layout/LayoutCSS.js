@@ -8,31 +8,34 @@ export const styles = theme => ({
         height: '70%',
         background: '#dcedc8'
     },
+    grow: {
+        flexGrow: 3
+    },
     toolbarMain: {
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
         height: '100px',
     },
     button: {
         color: '#a8ada3',
         height: '100%',
         width: '100%',
-        marginRight: '5%'
     },
     title: {
         height: '70%',
-        background: '#dcedc8'
+        background: '#dcedc8',  
+        textAlign: 'center',
+        paddingBottom: '5%'
     },
     jobTitle: {
         marginTop: '2%'
     },
     avatar: {
-        marginRight: '60%',
-        marginLeft: '5%',
-        width: 90,
-        height: 90
+        margin: 25,
+        width: 100,
+        height: 100,
     },
-    body: {
-
+    body: { 
+        margin: '5%',
     }
 })
 
@@ -40,16 +43,8 @@ export const themes = createMuiTheme({
     typography: {
       // Use the system font instead of the default Roboto font.
       fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
+        'Inconsolata',
+        'sans-serif'
       ].join(','),
       fontWeightMedium: 500,
       body1: {
@@ -59,13 +54,13 @@ export const themes = createMuiTheme({
         fontSize: 40,
       },
       button: {
-        fontStyle: 'italic',
+        fontSize: '50'
       }, 
       h1: {
-        color: '#9CCC65'
+        color: '#8BC34A'
       },
       h6: {
-        color: '#9CCC65'
+        color: '#8BC34A'
       }
-    },
+    }, 
   })
