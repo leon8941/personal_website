@@ -11,7 +11,6 @@ import Grid from '@material-ui/core/Grid'
 import Typist from 'react-typist'
 import avatarImg from '../../assets/avatar.png'
 
-
 import Aux from '../../hoc/aux'
 import { styles, themes } from './LayoutCSS'
 
@@ -45,7 +44,7 @@ class Layout extends Component {
                                 </Grid>
                                 <Typist cursor={{show: false}} avgTypingDelay={80} startDelay={50}>
                                     <Typography variant="h6" gutterBottom>
-                                        A FULL STACK WEB / SOFTWARE DEVELOPER
+                                        A FULL STACK WEB DEVELOPER
                                     </Typography>
                                 </Typist>
                             </MuiThemeProvider>

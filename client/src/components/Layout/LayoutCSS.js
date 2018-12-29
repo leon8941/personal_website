@@ -3,6 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 export const styles = theme => ({
     layout: {
         width: 'auto',
+        marginTop: '0'
     },
     header: {
         height: '70%',

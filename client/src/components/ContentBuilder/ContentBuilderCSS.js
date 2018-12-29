@@ -3,6 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 export const styles = theme => ({
     content: {
         margin: '0 15% 0 15%',
+        textAlign: 'center',
     },
     avatar: {
       margin: 25,
@@ -10,8 +11,15 @@ export const styles = theme => ({
       height: 100,
     },
     section: {
-      margin: '5% 0 5%'
-      // marginTop: `${theme.spacing.unit * 3}%`,
+      margin: '5% 0 5%',
+    },
+    '@media (max-width: 800px)': {
+      content: {
+        margin: '0 1% 0 1%',
+      },
+    },
+    careerPaths: {
+      fontFamily: 'Inconsolata'
     }
 })
 

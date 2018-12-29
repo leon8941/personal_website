@@ -5,8 +5,46 @@ import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 
 import { styles, themes } from './ContentBuilderCSS' 
+import CareerPaths from './CareerPaths/CareerPaths'
 
 class ContentBuilder extends Component {
+    state = {
+        experiences: [
+            {
+                key: "1",
+                year: "Sept 2014 - Oct 2015",
+                jobTitle: "Junior Software Developer",
+                companyName: "MC Crenergy",
+                descriptions: [
+                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+                    est.`, 
+                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+                    est.`
+                ]
+            }, 
+            {
+                key: "2",
+                year: "Nov 2015 - Dec 2016",
+                jobTitle: "Mid Level Software Developer",
+                companyName: "MC Crenergy",
+                descriptions: [
+                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+                    est.`
+                ]
+            }
+        ]
+    }
+
+
     render() {
         const {classes} = this.props
 
@@ -16,7 +54,7 @@ class ContentBuilder extends Component {
                     <div className={classes.section}>
                         <Typography variant="h3" gutterBottom paragraph>Hi there</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
-                            I'm a Full Stack Web Developer based in Kuala Lumpuer, Malaysia. <br />
+                            I'm a Full Stack Web Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
                             Full stack development is my passion, because one can have great overview of business sense 
@@ -30,9 +68,13 @@ class ContentBuilder extends Component {
                             Started out with Microsoft's ASP.NET web development stacks since 2014,
                             now I am fully diving into open source web technologies
                             while embracing the power of open source's community to the fullest. <br /> 
-
-                            Check out my <a href="/">work</a> to see what I am up to!
-                        </Typography>
+                        </Typography><br /> 
+                    </div>
+                    <Divider variant="middle" />
+                    <div className={classes.careerPaths}>
+                        <CareerPaths 
+                            experiences={this.state.experiences}
+                            />
                     </div>
                 </MuiThemeProvider>
             </div>
