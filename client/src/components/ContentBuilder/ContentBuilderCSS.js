@@ -2,7 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 
 export const styles = theme => ({
     content: {
-        margin: '0 15% 0 15%',
+        margin: '0 5% 0 5%',
         textAlign: 'center',
     },
     avatar: {
@@ -13,7 +13,7 @@ export const styles = theme => ({
     section: {
       margin: '5% 0 5%',
     },
-    '@media (max-width: 800px)': {
+    '@media (max-width: 800px)': { // Less than 800px
       content: {
         margin: '0 1% 0 1%',
       },

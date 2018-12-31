@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 import Timeline from '../../Timeline/Timeline'
 import TimelineItem from '../../Timeline/TimelineItem/TimelineItem'
 
-import Aux from '../../../hoc/aux'
+import Aux from '../../../hoc/aux' 
+import { styles } from './CareerPathsCSS'
+import { withStyles } from '../../../../node_modules/@material-ui/core';
 
 class CareerPaths extends Component {
     render() {
+        const {classes} = this.props
+
         return(
             <Aux>
+                
                 <Timeline lineColor={'#dcedc8'}>
                     {
                         this.props.experiences.map(exp => (
@@ -18,11 +23,17 @@ class CareerPaths extends Component {
                                 style={{ color: '#8BC34A' }}
                                 dateInnerStyle={{ backgroundColor: '#dcedc8', color: '#8BC34A' }}
                             >
-                                <h3>{exp.jobTitle}, {exp.companyName}</h3>
+                                <h3>{exp.jobTitle} @ {exp.companyName}</h3>
                                 {
-                                    exp.descriptions.map((desc, i) => (
-                                        <p key={`desc_` + i}>{desc}</p>
-                                    ))
+                                    <ul>
+                                    { 
+                                        exp.descriptions.map((desc, i) => {
+                                            return (
+                                                <li className={classes.descriptionList} key={`desc_` + i}>{desc}</li>
+                                            )
+                                        }) 
+                                    }
+                                    </ul>
                                 }
                             </TimelineItem>
                         ))
@@ -34,4 +45,4 @@ class CareerPaths extends Component {
 }
 
 
-export default CareerPaths;
+export default withStyles(styles)(CareerPaths)

@@ -36,7 +36,7 @@ class Layout extends Component {
                             <MuiThemeProvider theme={themes}>
                                 <Typist cursor={{show: false}} avgTypingDelay={150}>
                                     <Typography variant="h1" gutterBottom>
-                                        I'M LEON.
+                                        I'M TECK ONN.
                                     </Typography>  
                                 </Typist>
                                 <Grid container justify="center" alignItems="center">

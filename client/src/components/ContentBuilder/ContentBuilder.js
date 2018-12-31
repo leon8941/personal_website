@@ -12,38 +12,68 @@ class ContentBuilder extends Component {
         experiences: [
             {
                 key: "1",
-                year: "Sept 2014 - Oct 2015",
-                jobTitle: "Junior Software Developer",
-                companyName: "MC Crenergy",
-                descriptions: [
-                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-                    est.`, 
-                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-                    est.`
+                year: "Aug 2018 - Present",
+                jobTitle: "Software Developer",
+                companyName: "WOBB",
+                descriptions: [ // Each item in this array represent different paragraph
+                    `
+                        Work with a team of awesome peeps in a fast-paced and extremely dynamic startup company
+                    `,
+                    `
+                        Maintain and develop features of WOBB's job search web application 
+                        using variety of different technologies for different stacks and platforms, such as
+                        Ruby on Rails, Javascript (ES6), React.js, SQL, and React Native
+                    `,
+                    `
+                        Successfully built, shipped, and migrated new chat system using Sendbird
+                    `,
+                    `
+                        Work closely with sales operation and marketing team to perform ELT (Extract Load Transform) 
+                        for analysis purposes with the intention of making better business decision
+                    `
                 ]
             }, 
             {
                 key: "2",
-                year: "Nov 2015 - Dec 2016",
-                jobTitle: "Mid Level Software Developer",
+                year: "Mar 2017 - Jul 2018",
+                jobTitle: "Tech Team Leader",
                 companyName: "MC Crenergy",
                 descriptions: [
-                    `Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-                    exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-                    nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-                    reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-                    est.`
+                    `
+                        Plan, verify, and execute on every stages of software developments's lifecycle
+                    `,
+                    `
+                        Provide supervision, on job training, and technical guidance to fresh grads / junior developer
+                    `,
+                    `
+                        Communicate with various department's manager / leader to manage expectations in daily scrum meetings
+                    `
+
+                ]
+            },
+            {
+                key: "3",
+                year: "Sep 2014 - Feb 2017",
+                jobTitle: "Software Developer",
+                companyName: "MC Crenergy",
+                descriptions: [
+                    `
+                        Develop and maintain enterprise web applications for large corporation, using mainly Microsoft technologies s
+                        such as ASP.NET MVC, C# & VB, MS SQL, Reporting Services, Analysis Services and Integration Services for ETL.
+                    `,
+                    `
+                        Built and engineered 3 business apps (Cordova and Ionic), which are employee's claim management apps, 
+                        purchase requisition apps and distributor's merchandising apps.
+
+                    `,
+                    `
+                        Work with project teams and clients on capturing business requirement, 
+                        estimate effort, brainstorming session, negotiate project timeline, risk-management, backup plan.
+                    `
                 ]
             }
         ]
     }
-
 
     render() {
         const {classes} = this.props
@@ -57,8 +87,8 @@ class ContentBuilder extends Component {
                             I'm a Full Stack Web Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
-                            Full stack development is my passion, because one can have great overview of business sense 
-                            and able to identify more accurate solutions to problems from different perspective. <br /> 
+                            Full stack development is my passion, because one can have great overview and perspective of business sense 
+                            and able to identify better solution to deliver robust work. <br /> 
                         </Typography>
                     </div>
                     <Divider variant="middle" />
