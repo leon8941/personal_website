@@ -25,8 +25,8 @@ export const styles = theme => ({
         height: '70%',
         background: '#dcedc8',  
         textAlign: 'center',
-        paddingTop: '25%',
-        paddingBottom: '25%',
+        paddingTop: '15%',
+        paddingBottom: '15%',
     },
     jobTitle: {
         marginTop: '2%'
