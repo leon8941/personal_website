@@ -6,6 +6,7 @@ import Divider from '@material-ui/core/Divider'
 
 import { styles, themes } from './ContentBuilderCSS' 
 import CareerPaths from './CareerPaths/CareerPaths'
+import SkillSets from './SkillSets/SkillSets'
 
 class ContentBuilder extends Component {
     state = {
@@ -47,6 +48,9 @@ class ContentBuilder extends Component {
                     `,
                     `
                         Communicate with various department's manager / leader to manage expectations in daily scrum meetings
+                    `,
+                    `
+                        Implement S.O.P to software development's process to ensure fellow developers have a clear direction
                     `
 
                 ]
@@ -59,7 +63,7 @@ class ContentBuilder extends Component {
                 descriptions: [
                     `
                         Develop and maintain enterprise web applications for large corporation, using mainly Microsoft technologies s
-                        such as ASP.NET MVC, C# & VB, MS SQL, Reporting Services, Analysis Services and Integration Services for ETL.
+                        such as ASP.NET MVC, C# & VB, MS SQL, Reporting Services, Analysis Services and Integration Services for ETL
                     `,
                     `
                         Built and engineered 3 business apps (Cordova and Ionic), which are employee's claim management apps, 
@@ -68,9 +72,47 @@ class ContentBuilder extends Component {
                     `,
                     `
                         Work with project teams and clients on capturing business requirement, 
-                        estimate effort, brainstorming session, negotiate project timeline, risk-management, backup plan.
+                        estimate effort, brainstorming session, negotiate project timeline, risk-management, backup plan
                     `
                 ]
+            }
+        ],
+        skillSets: [
+            {
+                tech: 'SQL',
+                color: '#007bff'
+            },
+            {
+                tech: 'Ruby on Rails',
+                color: '#CA2014'
+            },
+            {
+                tech: 'GraphQL',
+                color: '#E10098'
+            },
+            {
+                tech: 'React.js',
+                color: '#67DAF9'
+            },
+            {
+                tech: 'Javascript',
+                color: '#EFDA5B'
+            },
+            {
+                tech: 'Flutter',
+                color: '#5AC6F6'
+            },
+            {
+                tech: 'Ionic',
+                color: '#5390F4'
+            },
+            {
+                tech: 'Typescript',
+                color: '#2A4F7F'
+            },
+            {
+                tech: 'ASP.NET',
+                color: '#333B72'
             }
         ]
     }
@@ -87,18 +129,28 @@ class ContentBuilder extends Component {
                             I'm a Full Stack Web Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
-                            Full stack development is my passion, because one can have great overview and perspective of business sense 
-                            and able to identify better solution to deliver robust work. <br /> 
+                            Full stack development is my passion, its feel good for me because one can have an eagle 
+                            view of perspective when it comes to identify solution to deliver robust work. <br /> 
                         </Typography>
                     </div>
                     <Divider variant="middle" />
                     <div className={classes.section}>
-                        <Typography variant="h3" gutterBottom paragraph>A bit about my experiences</Typography>
+                        <Typography variant="h3" gutterBottom paragraph>About Me</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
                             Started out with Microsoft's ASP.NET web development stacks since 2014,
-                            now I am fully diving into open source web technologies
-                            while embracing the power of open source's community to the fullest. <br /> 
+                            now I am fully diving into open source web technologies.  
+                            Currently working at <a href="https://my.wobbjobs.com/" target="_blank" rel="noopener noreferrer">WOBB</a> as a Software Developer. <br /> 
                         </Typography><br /> 
+                        <Typography variant="h6" gutterBottom paragraph>
+                            Here are the few technologies I am experienced with:
+                        </Typography>
+
+                        <div className={classes.skillSets}>
+                            <SkillSets
+                                skillSets={this.state.skillSets}
+                                />
+                        </div>
+
                     </div>
                     <Divider variant="middle" />
                     <div className={classes.careerPaths}>

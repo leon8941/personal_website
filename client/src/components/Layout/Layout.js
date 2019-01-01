@@ -35,7 +35,7 @@ class Layout extends Component {
                         <div className={classes.title}> 
                             <MuiThemeProvider theme={themes}>
                                 <Typist cursor={{show: false}} avgTypingDelay={150}>
-                                    <Typography variant="h1" gutterBottom>
+                                    <Typography variant="h2" gutterBottom>
                                         I'M TECK ONN.
                                     </Typography>  
                                 </Typist>

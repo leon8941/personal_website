@@ -11,7 +11,10 @@ export const styles = theme => ({
       height: 100,
     },
     section: {
-      margin: '5% 0 5%',
+      margin: '25% 0 25%',
+    },
+    skillSets: {
+
     },
     '@media (max-width: 800px)': { // Less than 800px
       content: {

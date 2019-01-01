@@ -25,7 +25,8 @@ export const styles = theme => ({
         height: '70%',
         background: '#dcedc8',  
         textAlign: 'center',
-        paddingBottom: '5%'
+        paddingTop: '25%',
+        paddingBottom: '25%',
     },
     jobTitle: {
         marginTop: '2%'
@@ -58,6 +59,9 @@ export const themes = createMuiTheme({
         fontSize: '50'
       }, 
       h1: {
+        color: '#8BC34A'
+      },
+      h2: {
         color: '#8BC34A'
       },
       h6: {
