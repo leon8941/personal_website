@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Timeline from '../../Timeline/Timeline'
-import TimelineItem from '../../Timeline/TimelineItem/TimelineItem'
+import Timeline from '../Timeline/Timeline'
+import TimelineItem from '../Timeline/TimelineItem/TimelineItem'
 
 import Aux from '../../../hoc/aux' 
 import { styles } from './CareerPathsCSS'

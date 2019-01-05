@@ -9,14 +9,33 @@ import { Avatar } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 
 import Typist from 'react-typist'
-import avatarImg from '../../assets/avatar.png'
 import Emoji from 'react-emoji-render'
-
+import ReactSVG from 'react-svg'
+ 
 import Aux from '../../hoc/aux'
 import { styles, themes } from './LayoutCSS'
+import avatarImg from '../../assets/avatar.png'
+import linkedinIcon from '../../assets/linkedin.svg'
+import githubIcon from '../../assets/github.svg'
+import instagramIcon from '../../assets/instagram.svg'
 
 class Layout extends Component {
     render() {
+        const socialIcons = [
+            {
+              src: linkedinIcon,
+              link: 'https://www.linkedin.com/in/teckonn'
+            }, 
+            {
+              src: githubIcon,
+              link: 'https://github.com/leon8941'
+            }, 
+            {
+              src: instagramIcon,
+              link: 'https://www.instagram.com/dvlpr.miew'
+            }, 
+        ]
+
         const {classes} = this.props
         
         return (
@@ -56,9 +75,25 @@ class Layout extends Component {
                             </main>
                         </div>
                         <div className={classes.footer}>
-                            <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn  ">
-                                
+                            <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
+                            
                             </Emoji>
+                            <div className={classes.socialIcons}>
+                              {
+                                socialIcons.map((socialIcon, index) => {
+                                  return(
+                                    <ReactSVG 
+                                      key={`icon_${index}`} 
+                                      src={socialIcon.src} 
+                                      className={classes.socialIcon} 
+                                      onClick={()=>{
+                                        window.open(socialIcon.link)
+                                      }}
+                                      />
+                                  )
+                                })
+                              }
+                            </div>
                         </div>
                     </div>
                 </React.Fragment>

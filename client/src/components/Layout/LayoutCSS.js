@@ -40,15 +40,35 @@ export const styles = theme => ({
         margin: '5%',
     },
     footer: {
-        height: '20%',
+        height: '30%',
         background: '#dcedc8',
-        padding: '5% 0 5% 0',
+        padding: '5% 25% 5% 25%',
+        margin: 'auto',
         textAlign: 'center',
         fontFamily: [
           'Inconsolata',
           'sans-serif'
         ].join(','),
         fontSize: 12
+    },
+    socialIcons: {
+        marginLeft: '45%',
+        marginTop: '2.5%'
+    },
+    socialIcon: {
+        float: 'left',
+        margin: '0 0 0 5px'
+    },
+    '@media (max-width: 500px)': { // Less than 800px
+        socialIcons: {
+          marginLeft: '30%',
+          marginTop: '2.5%',
+          marginBottom: '2.5%'
+        },
+        footer: {
+          paddingTop: '10%',
+          paddingBottom: '10%'
+        }
     }
 })
 
