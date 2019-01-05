@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid'
 
 import Typist from 'react-typist'
 import avatarImg from '../../assets/avatar.png'
+import Emoji from 'react-emoji-render'
 
 import Aux from '../../hoc/aux'
 import { styles, themes } from './LayoutCSS'
@@ -26,9 +27,9 @@ class Layout extends Component {
                         <div className={classes.header}>
                             <Toolbar variant="dense" className={classes.toolbarMain}>
                                 <MuiThemeProvider theme={themes}>
-                                    <Button className={classes.button} size="large">About Me</Button>
-                                    <Button className={classes.button} size="large">My Works</Button>
-                                    <Button className={classes.button} size="large">My Journey</Button>
+                                    <Button className={classes.button} size="large">About</Button>
+                                    <Button className={classes.button} size="large">Works</Button>
+                                    <Button className={classes.button} size="large">Moments</Button>
                                 </MuiThemeProvider>
                             </Toolbar>
                         </div>
@@ -53,6 +54,11 @@ class Layout extends Component {
                             <main>
                                 {this.props.children}
                             </main>
+                        </div>
+                        <div className={classes.footer}>
+                            <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn  ">
+                                
+                            </Emoji>
                         </div>
                     </div>
                 </React.Fragment>

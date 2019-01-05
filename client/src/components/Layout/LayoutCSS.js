@@ -38,6 +38,17 @@ export const styles = theme => ({
     },
     body: { 
         margin: '5%',
+    },
+    footer: {
+        height: '20%',
+        background: '#dcedc8',
+        padding: '5% 0 5% 0',
+        textAlign: 'center',
+        fontFamily: [
+          'Inconsolata',
+          'sans-serif'
+        ].join(','),
+        fontSize: 12
     }
 })
 

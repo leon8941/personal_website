@@ -133,9 +133,11 @@ class ContentBuilder extends Component {
                             view of perspective when it comes to identify solution to deliver robust work. <br /> 
                         </Typography>
                     </div>
+
                     <Divider variant="middle" />
+
                     <div className={classes.section}>
-                        <Typography variant="h3" gutterBottom paragraph>About Me</Typography>
+                        <Typography variant="h3" gutterBottom paragraph>About my bits</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
                             Started out with Microsoft's ASP.NET web development stacks since 2014,
                             now I am fully diving into open source web technologies.  
@@ -150,14 +152,21 @@ class ContentBuilder extends Component {
                                 skillSets={this.state.skillSets}
                                 />
                         </div>
-
                     </div>
+
                     <Divider variant="middle" />
+
                     <div className={classes.careerPaths}>
+                        <Typography variant="h3" gutterBottom paragraph>My history</Typography>
                         <CareerPaths 
                             experiences={this.state.experiences}
                             />
                     </div>
+
+                    <Divider variant="middle" />
+
+                    
+
                 </MuiThemeProvider>
             </div>
         )        

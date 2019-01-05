@@ -12,6 +12,7 @@ export const styles = theme => ({
     },
     section: {
       margin: '25% 0 25%',
+      padding: '0 20% 0 20%'
     },
     skillSets: {
 
@@ -20,9 +21,16 @@ export const styles = theme => ({
       content: {
         margin: '0 1% 0 1%',
       },
+      section: {
+        padding: '0 1% 0 1%'
+      },
     },
     careerPaths: {
-      fontFamily: 'Inconsolata'
+      fontFamily: [
+        'Inconsolata',
+        'sans-serif'
+      ].join(','),
+      padding: '15% 0 0 0'
     }
 })
 
