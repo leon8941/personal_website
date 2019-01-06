@@ -7,6 +7,7 @@ import Divider from '@material-ui/core/Divider'
 import { styles, themes } from './ContentBuilderCSS' 
 import CareerPaths from './CareerPaths/CareerPaths'
 import SkillSets from './SkillSets/SkillSets'
+import ContactMe from './ContactMe/ContactMe'
 
 class ContentBuilder extends Component {
     state = {
@@ -150,7 +151,7 @@ class ContentBuilder extends Component {
                         <div className={classes.skillSets}>
                             <SkillSets
                                 skillSets={this.state.skillSets}
-                                />
+                            />
                         </div>
                     </div>
 
@@ -165,7 +166,12 @@ class ContentBuilder extends Component {
 
                     <Divider variant="middle" />
 
-                    
+                    <div className={classes.section}>
+                        <Typography variant="h3" gutterBottom>
+                            Contact
+                        </Typography>
+                        <ContactMe />
+                    </div>
 
                 </MuiThemeProvider>
             </div>

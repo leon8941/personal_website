@@ -22,7 +22,6 @@ const skillSets = (props) => (
             />
         )
     })
-        
-);
+)
 
-export default withStyles(styles)(skillSets);
+export default withStyles(styles)(skillSets)

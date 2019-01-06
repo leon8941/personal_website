@@ -46,9 +46,9 @@ class Layout extends Component {
                         <div className={classes.header}>
                             <Toolbar variant="dense" className={classes.toolbarMain}>
                                 <MuiThemeProvider theme={themes}>
-                                    <Button className={classes.button} size="large">About</Button>
-                                    <Button className={classes.button} size="large">Works</Button>
-                                    <Button className={classes.button} size="large">Moments</Button>
+                                    <Button href="/" className={classes.button} size="large">About</Button>
+                                    <Button href="/works" className={classes.button} size="large">Works</Button>
+                                    <Button href="/moments" className={classes.button} size="large">Moments</Button>
                                 </MuiThemeProvider>
                             </Toolbar>
                         </div>

@@ -59,7 +59,7 @@ export const styles = theme => ({
         float: 'left',
         margin: '0 0 0 5px'
     },
-    '@media (max-width: 500px)': { // Less than 800px
+    '@media (max-width: 500px)': { // Less than 500px
         socialIcons: {
           marginLeft: '30%',
           marginTop: '2.5%',
