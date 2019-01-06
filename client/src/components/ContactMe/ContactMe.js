@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button'
 import Icon from '@material-ui/core/Icon'
 
 import { styles } from './ContactMeCSS'
-import { Typography } from '../../../../node_modules/@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 const contactMe = (props) => (
 	<div>

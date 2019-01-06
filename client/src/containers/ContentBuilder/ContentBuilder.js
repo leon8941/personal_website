@@ -5,9 +5,9 @@ import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 
 import { styles, themes } from './ContentBuilderCSS' 
-import CareerPaths from './CareerPaths/CareerPaths'
-import SkillSets from './SkillSets/SkillSets'
-import ContactMe from './ContactMe/ContactMe'
+import CareerPaths from '../../components/CareerPaths/CareerPaths'
+import SkillSets from '../../components/SkillSets/SkillSets'
+import ContactMe from '../../components/ContactMe/ContactMe'
 
 class ContentBuilder extends Component {
     state = {

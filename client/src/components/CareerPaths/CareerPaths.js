@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import Timeline from '../Timeline/Timeline'
 import TimelineItem from '../Timeline/TimelineItem/TimelineItem'
 
-import Aux from '../../../hoc/aux' 
+import Aux from '../../hoc/aux' 
 import { styles } from './CareerPathsCSS'
-import { withStyles } from '../../../../node_modules/@material-ui/core';
+import { withStyles } from '@material-ui/core/styles'
 
 class CareerPaths extends Component {
     render() {
