@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 
-import Toolbar from '@material-ui/core/Toolbar'
-import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import { CssBaseline } from '@material-ui/core'
 import { withStyles, MuiThemeProvider } from '@material-ui/core/styles'
@@ -43,15 +41,6 @@ class Layout extends Component {
                 <React.Fragment>
                     <CssBaseline />
                     <div className={classes.layout}>
-                        <div className={classes.header}>
-                            <Toolbar variant="dense" className={classes.toolbarMain}>
-                                <MuiThemeProvider theme={themes}>
-                                    <Button href="/" className={classes.button} size="large">About</Button>
-                                    <Button href="/works" className={classes.button} size="large">Works</Button>
-                                    <Button href="/moments" className={classes.button} size="large">Moments</Button>
-                                </MuiThemeProvider>
-                            </Toolbar>
-                        </div>
                         <div className={classes.title}> 
                             <MuiThemeProvider theme={themes}>
                                 <Typist cursor={{show: false}} avgTypingDelay={150}>

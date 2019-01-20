@@ -130,8 +130,8 @@ class ContentBuilder extends Component {
                             I'm a Full Stack Web Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
-                            Full stack development is my passion, its feel good for me because one can have an eagle 
-                            view of perspective when it comes to identify solution to deliver robust work. <br /> 
+                            Full stack development is my passion, its give me a greater view of perspective 
+                            when it comes to identify solution. <br /> 
                         </Typography>
                     </div>
 

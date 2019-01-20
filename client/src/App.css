@@ -30,3 +30,19 @@
     transform: rotate(360deg);
   }
 }
+
+.Header {
+  height: 70%;
+  background-color: #dcedc8;
+}
+
+.ToolbarMain {
+  justify-content: space-around;
+  height: '100px';
+}
+
+.HeaderButtons {
+  color: #a8ada3;
+  height: 100%;
+  width: 100%;
+}
