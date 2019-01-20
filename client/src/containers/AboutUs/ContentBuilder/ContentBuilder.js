@@ -138,7 +138,7 @@ class ContentBuilder extends Component {
                     <Divider variant="middle" />
 
                     <div className={classes.section}>
-                        <Typography variant="h3" gutterBottom paragraph>About my bits</Typography>
+                        <Typography variant="h3" gutterBottom paragraph>A little bits about me</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
                             Started out with Microsoft's ASP.NET web development stacks since 2014,
                             now I am fully diving into open source web technologies.  
