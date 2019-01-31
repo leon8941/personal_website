@@ -4,7 +4,8 @@ export const styles = theme => ({
             'Inconsolata',
             'sans-serif'
         ].join(','),
-        position: 'absolute'
+        // position: 'absolute',
+        
     },
     introduction: {
         background: '#dcedc8',

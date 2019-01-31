@@ -84,7 +84,7 @@ class Works extends Component {
                         <div className={classes.introduction}>
                             <Typist cursor={{show: false}} avgTypingDelay={70}>
                                 <Typography variant="h5" gutterBottom>
-                                    HERE ARE SOME THINGS I'VE MADE
+                                    HERE ARE SOME THINGS I'VE BUILT
                                 </Typography>
                             </Typist>
                         </div>

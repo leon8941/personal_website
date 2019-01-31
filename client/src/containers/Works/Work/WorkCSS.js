@@ -7,6 +7,6 @@ export const styles = theme => ({
     },
     bottom: {
         height: "55%",
-        marginTop: "15%"
+        // marginTop: "15%"
     }
 })

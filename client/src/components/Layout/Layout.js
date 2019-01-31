@@ -63,7 +63,7 @@ class Layout extends Component {
                                 {this.props.children}
                             </main>
                         </div>
-                        <div className={classes.footer}>
+                        {/* <div className={classes.footer}>
                             <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
                             
                             </Emoji>
@@ -83,7 +83,7 @@ class Layout extends Component {
                                 })
                               }
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </React.Fragment>
             </Aux>

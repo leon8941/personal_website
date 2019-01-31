@@ -39,37 +39,37 @@ export const styles = theme => ({
     body: { 
         margin: '5%',
     },
-    footer: {
-        height: '30%',
-        background: '#dcedc8',
-        padding: '5% 25% 5% 25%',
-        margin: 'auto',
-        textAlign: 'center',
-        fontFamily: [
-          'Inconsolata',
-          'sans-serif'
-        ].join(','),
-        fontSize: 12
-    },
-    socialIcons: {
-        marginLeft: '45%',
-        marginTop: '2.5%'
-    },
-    socialIcon: {
-        float: 'left',
-        margin: '0 0 0 5px'
-    },
-    '@media (max-width: 500px)': { // Less than 500px
-        socialIcons: {
-          marginLeft: '30%',
-          marginTop: '2.5%',
-          marginBottom: '2.5%'
-        },
-        footer: {
-          paddingTop: '10%',
-          paddingBottom: '10%'
-        }
-    }
+    // footer: {
+    //     height: '30%',
+    //     background: '#dcedc8',
+    //     padding: '5% 25% 5% 25%',
+    //     margin: 'auto',
+    //     textAlign: 'center',
+    //     fontFamily: [
+    //       'Inconsolata',
+    //       'sans-serif'
+    //     ].join(','),
+    //     fontSize: 12
+    // },
+    // socialIcons: {
+    //     marginLeft: '45%',
+    //     marginTop: '2.5%'
+    // },
+    // socialIcon: {
+    //     float: 'left',
+    //     margin: '0 0 0 5px'
+    // },
+    // '@media (max-width: 500px)': { // Less than 500px
+    //     socialIcons: {
+    //       marginLeft: '30%',
+    //       marginTop: '2.5%',
+    //       marginBottom: '2.5%'
+    //     },
+    //     footer: {
+    //       paddingTop: '10%',
+    //       paddingBottom: '10%'
+    //     }
+    // }
 })
 
 export const themes = createMuiTheme({
