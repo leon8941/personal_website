@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
  
-import Typist from 'react-typist'
 import Emoji from 'react-emoji-render'
 import ReactSVG from 'react-svg'
 
@@ -20,6 +19,7 @@ import instagramIcon from './assets/instagram.svg'
 
 export const themes = createMuiTheme({
   typography: {
+    useNextVariants: true,
     // Use the system font instead of the default Roboto font.
     fontFamily: [
       'Inconsolata',

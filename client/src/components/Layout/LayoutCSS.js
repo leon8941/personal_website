@@ -74,29 +74,30 @@ export const styles = theme => ({
 
 export const themes = createMuiTheme({
     typography: {
-      // Use the system font instead of the default Roboto font.
-      fontFamily: [
+        useNextVariants: true,
+        // Use the system font instead of the default Roboto font.
+        fontFamily: [
         'Inconsolata',
         'sans-serif'
-      ].join(','),
-      fontWeightMedium: 500,
-      body1: {
+        ].join(','),
+        fontWeightMedium: 500,
+        body1: {
         fontWeight: 500,
-      },
-      subtitle1: {
+        },
+        subtitle1: {
         fontSize: 40,
-      },
-      button: {
+        },
+        button: {
         fontSize: '50'
-      }, 
-      h1: {
+        }, 
+        h1: {
         color: '#8BC34A'
-      },
-      h2: {
+        },
+        h2: {
         color: '#8BC34A'
-      },
-      h6: {
+        },
+        h6: {
         color: '#8BC34A'
-      }
+        }
     }, 
   })
