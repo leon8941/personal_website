@@ -5,6 +5,12 @@ export const styles = theme => ({
     card: {
         height: "350px"
     },
+    cardHeader: {
+
+    },
+    githubIcon: {
+
+    },
     bottom: {
         height: "55%",
         // marginTop: "15%"

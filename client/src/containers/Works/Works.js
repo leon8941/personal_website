@@ -18,7 +18,7 @@ class Works extends Component {
                 key: "1", 
                 title: "Personal Website",
                 description: "First version of my website, built with ReactJS and Rails as backend. API calls using GraphQL and hosted using Heroku.",
-                githubLink: null,
+                githubLink: "https://github.com/leon8941/personal_website",
                 skillSets: [
                     {
                         tech: 'Ruby on Rails',
@@ -42,7 +42,7 @@ class Works extends Component {
                 key: "2", 
                 title: "Flutter Chat Apps",
                 description: "First try with chat apps built with Flutter. Support by Firebase backend.",
-                githubLink: null,
+                githubLink: "https://github.com/leon8941/merchandising-flutter",
                 skillSets: [
                     {
                         tech: 'Flutter',
@@ -58,7 +58,7 @@ class Works extends Component {
                 key: "3", 
                 title: "Burger Project",
                 description: "A burger builder web apps that burger lovers can choose whatever ingredients they like. Built with ReactJS, backend support by Rails. Currently use Firebase to persist data but will migrate to Postgres in future.",
-                githubLink: null,
+                githubLink: "https://github.com/leon8941/list-of-ingredients",
                 skillSets: [
                     {
                         tech: 'React.js',

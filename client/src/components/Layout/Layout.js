@@ -63,27 +63,6 @@ class Layout extends Component {
                                 {this.props.children}
                             </main>
                         </div>
-                        {/* <div className={classes.footer}>
-                            <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
-                            
-                            </Emoji>
-                            <div className={classes.socialIcons}>
-                              {
-                                socialIcons.map((socialIcon, index) => {
-                                  return(
-                                    <ReactSVG 
-                                      key={`icon_${index}`} 
-                                      src={socialIcon.src} 
-                                      className={classes.socialIcon} 
-                                      onClick={()=>{
-                                        window.open(socialIcon.link)
-                                      }}
-                                      />
-                                  )
-                                })
-                              }
-                            </div>
-                        </div> */}
                     </div>
                 </React.Fragment>
             </Aux>
