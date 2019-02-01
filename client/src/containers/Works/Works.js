@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import { MuiThemeProvider } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -7,7 +8,7 @@ import Typography from '@material-ui/core/Typography'
 
 import Typist from 'react-typist'
 
-import { styles } from './WorksCSS'
+import { styles, themes } from './WorksCSS'
 import Aux from '../../hoc/aux'
 import Work from './Work/Work'
 
@@ -82,11 +83,13 @@ class Works extends Component {
                     <CssBaseline />
                     <div className={classes.body}>
                         <div className={classes.introduction}>
-                            <Typist cursor={{show: false}} avgTypingDelay={70}>
-                                <Typography variant="h5" gutterBottom>
-                                    HERE ARE SOME THINGS I'VE BUILT
-                                </Typography>
-                            </Typist>
+                            <MuiThemeProvider theme={themes}>
+                                <Typist cursor={{show: false}} avgTypingDelay={70}>
+                                    <Typography variant="h4" gutterBottom>
+                                        HERE ARE SOME THINGS I'VE BUILT
+                                    </Typography>
+                                </Typist>
+                            </MuiThemeProvider>
                         </div>
                         <div className={classes.works}>
                             {

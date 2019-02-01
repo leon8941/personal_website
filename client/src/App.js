@@ -18,6 +18,9 @@ import githubIcon from './assets/github.svg'
 import instagramIcon from './assets/instagram.svg'
 
 export const themes = createMuiTheme({
+  palette: {
+    primary: { main: '#a8ada3'},
+  },
   typography: {
     useNextVariants: true,
     // Use the system font instead of the default Roboto font.
@@ -73,9 +76,9 @@ class App extends Component {
           <div className="Header">
             <Toolbar variant="dense" className="ToolbarMain"> 
               <MuiThemeProvider theme={themes}>
-                <Button component={NavLink} to="/" className="HeaderButtons" size="large">About</Button>
-                <Button component={NavLink} to="/works" className="HeaderButtons" size="large">Works</Button>
-                <Button component={NavLink} to="/moments" className="HeaderButtons" size="large">Moments</Button>
+                <Button component={NavLink} to="/" color="primary" size="large">About</Button>
+                <Button component={NavLink} to="/works" color="primary"  size="large">Works</Button>
+                {/* <Button component={NavLink} to="/moments" color="primary"  size="large">Moments</Button> */}
               </MuiThemeProvider>
             </Toolbar>
           </div>

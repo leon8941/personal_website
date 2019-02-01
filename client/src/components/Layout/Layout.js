@@ -7,32 +7,13 @@ import { Avatar } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 
 import Typist from 'react-typist'
-import Emoji from 'react-emoji-render'
-import ReactSVG from 'react-svg'
  
 import Aux from '../../hoc/aux'
 import { styles, themes } from './LayoutCSS'
 import avatarImg from '../../assets/avatar.png'
-import linkedinIcon from '../../assets/linkedin.svg'
-import githubIcon from '../../assets/github.svg'
-import instagramIcon from '../../assets/instagram.svg'
 
 class Layout extends Component {
     render() {
-        const socialIcons = [
-            {
-              src: linkedinIcon,
-              link: 'https://www.linkedin.com/in/teckonn'
-            }, 
-            {
-              src: githubIcon,
-              link: 'https://github.com/leon8941'
-            }, 
-            {
-              src: instagramIcon,
-              link: 'https://www.instagram.com/dvlpr.miew'
-            }, 
-        ]
 
         const {classes} = this.props
         
