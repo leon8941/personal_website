@@ -1,11 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Roadmap
+- ~~Complete 1st version~~ 
+- Design backend with Rails Model
+- Implement GraphQL 
+- Implement real time commenting and chat system either using Firebase or Pusher or Sendbird or PubNub
 
 Things you may want to cover:
-
-* Ruby version
+* Tools version
+    * ruby : 2.5.1
+    * rails : 5.2.1
+    * reactjs : 16.7.0
+    * webpack-dev-server : 3.1.9
 
 * System dependencies
 
@@ -20,5 +26,6 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+    * Heroku 
 
-* ...
+
