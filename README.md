@@ -17,7 +17,8 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
+* GraphQL creation
+    * `rails g graphql:object [Model] [field][field_type]`
 
 * Database initialization and Table Design
     * experiences

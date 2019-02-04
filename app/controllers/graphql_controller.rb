@@ -1,5 +1,6 @@
 class GraphqlController < ApplicationController
   def execute
+    puts 'Start execute GraphQL'
     variables = ensure_hash(params[:variables])
     query = params[:query]
     operation_name = params[:operationName]

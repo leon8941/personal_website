@@ -9,5 +9,12 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :experiences, [ExperienceType], null: false,
+      description: "Get all experiences"
+    def experiences
+      Experience.joins(:experience_descriptions)
+    end
+
   end
 end
