@@ -1,0 +1,3 @@
+class ExperienceDescription < ApplicationRecord
+
+end

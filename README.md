@@ -19,7 +19,29 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
+* Database initialization and Table Design
+    * experiences
+        * id - bigint
+        * year
+        * job_title
+        * company_name
+    * experience_descriptions
+        * id - bigint
+        * experience_id
+        * description
+    * skill_sets
+        * id - bigint
+        * tech
+        * color
+    * projects
+        * id
+        * title
+        * description
+        * github_link
+    * project_skill_sets
+        * id
+        * project_id
+        * skill_set_id
 
 * How to run the test suite
 
