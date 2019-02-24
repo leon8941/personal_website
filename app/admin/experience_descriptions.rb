@@ -2,7 +2,7 @@ ActiveAdmin.register ExperienceDescription do
     # See permitted parameters documentation:
     # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
     #
-    permit_params :experience_id, :description
+    permit_params :experience_id, :description, :sorting
     #
     # or
     #
@@ -16,6 +16,7 @@ ActiveAdmin.register ExperienceDescription do
         f.inputs 'Details' do
             f.input :experience_id, as: :select, :collection => Experience.all, :label_method => :year
             f.input :description
+            f.input :sorting
         end
         f.actions
     end

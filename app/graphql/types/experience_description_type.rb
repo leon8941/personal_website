@@ -3,5 +3,6 @@ module Types
     field :id, ID, null: false
     field :description, String, null: true
     field :experience, ExperienceType, null: false
+    field :sorting, Integer, null: true
   end
 end

@@ -13,7 +13,7 @@ module Types
     field :experiences, [ExperienceType], null: false,
       description: "Get all experiences"
     def experiences
-      Experience.joins(:experience_descriptions)
+      Experience.joins(:experience_descriptions).distinct
     end
 
   end

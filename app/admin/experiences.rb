@@ -2,7 +2,7 @@ ActiveAdmin.register Experience do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :year, :job_title, :company_name
+permit_params :year, :job_title, :company_name, :sorting
 #
 # or
 #
