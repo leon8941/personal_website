@@ -17,6 +17,9 @@ import linkedinIcon from './assets/linkedin.svg'
 import githubIcon from './assets/github.svg'
 import instagramIcon from './assets/instagram.svg'
 
+import ApolloClient from 'apollo-boost'
+import { ApolloProvider } from 'react-apollo'
+
 export const themes = createMuiTheme({
   palette: {
     primary: { main: '#a8ada3'},
@@ -50,7 +53,9 @@ export const themes = createMuiTheme({
   }, 
 })
 
-
+const client = new ApolloClient({
+  uri: process.env.REACT_APP_SERVER_BASE_URI + '/graphql'
+});
 
 class App extends Component {
   render() {
@@ -71,45 +76,47 @@ class App extends Component {
     ]
     
     return (
-      <BrowserRouter>
-        <div className="App">
-          <div className="Header">
-            <Toolbar variant="dense" className="ToolbarMain"> 
-              <MuiThemeProvider theme={themes}>
-                <Button component={NavLink} to="/" color="primary" size="large">About</Button>
-                <Button component={NavLink} to="/works" color="primary"  size="large">Works</Button>
-                {/* <Button component={NavLink} to="/moments" color="primary"  size="large">Moments</Button> */}
-              </MuiThemeProvider>
-            </Toolbar>
+      <ApolloProvider client={client}>
+        <BrowserRouter>
+          <div className="App">
+            <div className="Header">
+              <Toolbar variant="dense" className="ToolbarMain"> 
+                <MuiThemeProvider theme={themes}>
+                  <Button component={NavLink} to="/" color="primary" size="large">About</Button>
+                  <Button component={NavLink} to="/works" color="primary"  size="large">Works</Button>
+                  {/* <Button component={NavLink} to="/moments" color="primary"  size="large">Moments</Button> */}
+                </MuiThemeProvider>
+              </Toolbar>
+            </div>
+            <Switch>
+                <Route path="/moments" exact component={Moments} />
+                <Route path="/works" component={Works} />
+                <Route path="/" component={AboutUs} />
+            </Switch>
+            <div className="footer">
+                <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
+                
+                </Emoji>
+                <div className="socialIcons">
+                  {
+                    socialIcons.map((socialIcon, index) => {
+                      return(
+                        <ReactSVG 
+                          key={`icon_${index}`} 
+                          src={socialIcon.src} 
+                          className="socialIcon"
+                          onClick={()=>{
+                            window.open(socialIcon.link)
+                          }}
+                          />
+                      )
+                    })
+                  }
+                </div>
+            </div>
           </div>
-          <Switch>
-              <Route path="/moments" exact component={Moments} />
-              <Route path="/works" component={Works} />
-              <Route path="/" component={AboutUs} />
-          </Switch>
-          <div className="footer">
-              <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
-              
-              </Emoji>
-              <div className="socialIcons">
-                {
-                  socialIcons.map((socialIcon, index) => {
-                    return(
-                      <ReactSVG 
-                        key={`icon_${index}`} 
-                        src={socialIcon.src} 
-                        className="socialIcon"
-                        onClick={()=>{
-                          window.open(socialIcon.link)
-                        }}
-                        />
-                    )
-                  })
-                }
-              </div>
-          </div>
-        </div>
-      </BrowserRouter>
+        </BrowserRouter>
+        </ApolloProvider>
     );
   }
 }

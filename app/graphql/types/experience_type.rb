@@ -1,5 +1,6 @@
 module Types
   class ExperienceType < Types::BaseObject
+    field :id, ID, null: false
     field :year, String, null: false
     field :job_title, String, null: false
     field :company_name, String, null: false
