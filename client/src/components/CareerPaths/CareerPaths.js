@@ -53,7 +53,7 @@ class CareerPaths extends Component {
                                                     { 
                                                         exp.experienceDescriptions.map((desc, i) => {
                                                             return (
-                                                                <li className={classes.descriptionList} key={`desc_` + i}>{desc.description}</li>
+                                                                <li className={classes.descriptionList} key={`desc_` + desc.id}>{desc.description}</li>
                                                             )
                                                         }) 
                                                     }

@@ -3,18 +3,16 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
-    end
-
     field :experiences, [ExperienceType], null: false,
       description: "Get all experiences"
     def experiences
-      Experience.joins(:experience_descriptions).distinct
+      Experience.joins(:experience_descriptions).order('experiences.sorting ASC').distinct
     end
 
+    field :skillSets, [SkillSetType], null: false,
+      description: "Get all skill sets"
+    def skill_sets
+      SkillSet.all
+    end
   end
 end
