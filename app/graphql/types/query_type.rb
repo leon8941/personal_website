@@ -14,5 +14,11 @@ module Types
     def skill_sets
       SkillSet.all
     end
+
+    field :works, [WorkType], null: false,
+      description: "Get all works along with skill sets"
+    def works
+      Work.joins(:skill_sets).distinct
+    end
   end
 end
