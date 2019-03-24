@@ -6,7 +6,7 @@ import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography' 
 import IconButton from '@material-ui/core/IconButton';
-import SvgIcon from '@material-ui/core/SvgIcon';
+
 import { withStyles } from '@material-ui/core/styles'
 
 import { styles } from './WorkCSS'
