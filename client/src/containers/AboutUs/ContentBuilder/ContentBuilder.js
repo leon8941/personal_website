@@ -9,6 +9,19 @@ import CareerPaths from '../../../components/CareerPaths/CareerPaths'
 import SkillSets from '../../../components/SkillSets/SkillSets'
 import ContactMe from '../../../components/ContactMe/ContactMe'
 
+import gql from 'graphql-tag'
+import { Query } from 'react-apollo'
+
+const GET_SKILL_SETS = gql`
+    {
+        skillSets {
+            id
+            techDescription
+            colorCode
+        }
+    }
+  `
+
 class ContentBuilder extends Component {
     state = {
     }
@@ -44,7 +57,24 @@ class ContentBuilder extends Component {
                         </Typography>
 
                         <div className={classes.skillSets}>
-                            <SkillSets />
+                            <Query query={GET_SKILL_SETS}>
+                                {
+                                    ({ loading, error, data }) => {
+                                        console.log('data content builder', data)
+                                        
+                                        if (loading) return "Loading..."
+                                        if (error) return `Error! ${error.message}`
+                                        return (
+                                            <React.Fragment>
+                                                <SkillSets
+                                                        skillSets={data.skillSets}
+                                                    >
+                                                </SkillSets>
+                                            </React.Fragment>
+                                        )
+                                    }
+                                }
+                            </Query>
                         </div>
                     </div>
 
