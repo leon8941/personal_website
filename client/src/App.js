@@ -54,7 +54,7 @@ export const themes = createMuiTheme({
 })
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_SERVER_BASE_URI + '/graphql'
+  uri: '/graphql'
 });
 
 class App extends Component {
