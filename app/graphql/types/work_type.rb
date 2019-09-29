@@ -4,6 +4,7 @@ module Types
     field :title, String, null: true
     field :description, String, null: true
     field :github_link, String, null: true
+    field :medium_link, String, null: true
     field :skill_sets, [Types::SkillSetType], null: true
   end
 end

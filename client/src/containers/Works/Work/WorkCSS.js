@@ -1,18 +1,19 @@
 export const styles = theme => ({
     work: {
-        textAlign: "left",
+        textAlign: "left"
     },
     card: {
         height: "350px"
     },
     cardHeader: {
-
     },
     githubIcon: {
 
     },
+    mediumIcon: {
+
+    },
     bottom: {
-        height: "55%",
-        // marginTop: "15%"
+        height: "35%",
     }
 })

@@ -24,6 +24,7 @@ const GET_WORKS = gql`
                 title
                 description
                 githubLink
+                mediumLink
                 skillSets {
                     id
                     techDescription
