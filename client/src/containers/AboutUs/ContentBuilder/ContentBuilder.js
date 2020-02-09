@@ -35,7 +35,7 @@ class ContentBuilder extends Component {
                     <div className={classes.section}>
                         <Typography variant="h3" gutterBottom paragraph>Hi there</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
-                            I'm a Full Stack Web Developer based in Kuala Lumpur, Malaysia. <br />
+                            I'm a Software Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
                             Full stack development is my passion, its give me a greater view of perspective 
