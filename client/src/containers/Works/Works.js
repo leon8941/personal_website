@@ -51,7 +51,7 @@ class Works extends Component {
                                         <MuiThemeProvider theme={themes}>
                                             <Typist cursor={{show: false}} avgTypingDelay={70}>
                                                 <Typography variant="h4" gutterBottom>
-                                                    HERE ARE SOME THINGS I'VE BUILT
+                                                    THINGS I'VE BUILT
                                                 </Typography>
                                             </Typist>
                                         </MuiThemeProvider>
