@@ -94,7 +94,7 @@ class App extends Component {
                 <Route path="/" component={AboutUs} />
             </Switch>
             <div className="footer">
-                <Emoji text="@ 2019 Designed and developed with ❤️ by Teck Onn " >
+                <Emoji text="@ 2020 Designed and developed with ❤️ by Teck Onn " >
                 
                 </Emoji>
                 <div className="socialIcons">
