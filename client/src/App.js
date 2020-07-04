@@ -84,14 +84,13 @@ class App extends Component {
                 <MuiThemeProvider theme={themes}>
                   <Button component={NavLink} to="/" color="primary" size="large">About</Button>
                   <Button component={NavLink} to="/works" color="primary"  size="large">Works</Button>
-                  {/* <Button component={NavLink} to="/moments" color="primary"  size="large">Moments</Button> */}
                 </MuiThemeProvider>
               </Toolbar>
             </div>
             <Switch>
-                <Route path="/moments" exact component={Moments} />
                 <Route path="/works" component={Works} />
                 <Route path="/" component={AboutUs} />
+                <Route path="*" component={AboutUs} />
             </Switch>
             <div className="footer">
                 <Emoji text="@ 2020 Designed and developed with ❤️ by Teck Onn " >
