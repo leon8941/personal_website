@@ -35,6 +35,7 @@ class ContentBuilder extends Component {
                     <div className={classes.section}>
                         <Typography variant="h3" gutterBottom paragraph>Hi there</Typography>
                         <Typography variant="h6" gutterBottom paragraph>
+                            A tech enthusiast. Constantly exploring different ideas and technologies <br /> <br />
                             I'm a Software Developer based in Kuala Lumpur, Malaysia. <br />
                         </Typography>
                         <Typography variant="h6" gutterBottom paragraph>
