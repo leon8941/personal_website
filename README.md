@@ -1,4 +1,8 @@
 # README
+How to run:
+1. Start the backend with `rails s -p 3001`
+2. Start the React front end with `yarn --cwd client run start`
+
 
 Roadmap
 - ~~Complete 1st version~~ 
